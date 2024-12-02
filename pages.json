@@ -65,7 +65,58 @@
 				"navigationBarTitleText": "阅读记录",
 				"enablePullDownRefresh": true
 			}
-		}
+		},
+		{
+			"path": "pages/cIndex/index",
+			"style": {
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"backgroundColor":"#FFFFFF"
+			}
+		},
+		{
+            "path" : "pages/camera/camera",
+            "style" :                                                                                    
+            {
+				"navigationStyle":"custom",
+				"backgroundColor":"#000000"
+            }
+        },
+		{
+            "path" : "pages/camera/portrait/portrait",
+            "style" :                                                                                    
+            {
+				"navigationStyle":"custom",
+				"backgroundColor":"#000000"
+            }
+        }
+	    ,{
+            "path" : "pages/camera/idcard/idcard",
+            "style" :                                                                                    
+            {
+                "navigationStyle":"custom",
+                "backgroundColor":"#000000"
+            }
+            
+        }
+		,{
+            "path" : "pages/camera/idphoto/idphoto",
+            "style" :                                                                                    
+            {
+                "navigationStyle":"custom",
+                "backgroundColor":"#000000"
+            }
+            
+        }
+        ,{
+            "path" : "pages/camera/watermark/watermark",
+            "style" :                                                                                    
+            {
+               "navigationStyle":"custom",
+               "backgroundColor":"#000000"
+            }
+            
+        }
+		
 		// #ifdef APP
 		, {
 			"path": "pages/ucenter/about/about",
@@ -101,6 +152,13 @@
 			"style": {
 				"navigationStyle": "custom",
 				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path" : "pages/food/food",
+			"style" : 
+			{
+				"navigationBarTitleText" : "food"
 			}
 		}
 		// #endif

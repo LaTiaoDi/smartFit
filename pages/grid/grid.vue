@@ -27,9 +27,12 @@
 			<uni-card @click="clickFitness('开始健身')" class="report">
 				<text>动作捕捉与反馈</text>
 			</uni-card>
-			<uni-card @click="clickFood('开始分析食物营养')">
-				<text>食物照片营养分析</text>
-			</uni-card>
+			<view class="food">
+				<uni-card isShadow @click="clickFood('开始分析食物营养')" >
+					<text style="color: blueviolet;">食物照片营养分析</text>
+				</uni-card>
+			</view>
+			
 			<uni-card @click="clickPlan('设置运动计划')">
 				<text>运动计划</text>
 			</uni-card>
@@ -122,14 +125,16 @@
 			},
 			clickFood(e){
 				uni.showToast({
-					title:'测试扫码',
+					title:'测试扫描',
 					icon: 'none'
 				}),
 				uni.navigateTo({
-					url: '/pages/camera/index'
+					// url: "/pages/cIndex/index"
+					url:'/pages/camera/idcard/idcard?dotype=badge'
+					// url:'/pages/food/food'
 				})
 			},
-			clickPlan(e
+			clickPlan(e){
 				uni.showToast({
 					title:e,
 					icon: 'none'
@@ -148,6 +153,9 @@
 		background-color: #fff;
 		min-height: 100%;
 		height: auto;
+	}
+	.food {
+		background-color: #333;
 	}
 	view {
 		font-size: 14px;
